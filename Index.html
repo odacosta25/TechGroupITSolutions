@@ -2,149 +2,188 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Servicios - TechGroup IT Solutions</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechGroup - IT Solutions</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-light">
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">TechGroup IT Solutions</a>
-    </div>
-  </nav>
-
-  <!-- Encabezado -->
-  <header class="bg-primary text-white text-center py-5 shadow">
-    <h1 class="fw-bold">Nuestros Servicios</h1>
-    <p class="lead">Explora nuestros servicios tecnológicos de alta calidad</p>
+<body>
+  <header class="header">
+    <a href="/" class="log">
+  <img src="img/homepage/logo.png" alt="TechGroup">
+</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li class="dropdown">
+          <a href="#">Servicios ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="producto.html">Desarrollo Web</a></li>
+            <li><a href="producto.html">Aplicaciones Móviles</a></li>
+            <li><a href="producto.html">Soluciones Cloud</a></li>
+            <li><a href="producto.html">Ciberseguridad</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contáctanos</a></li>
+        <li><a href="login.html" class="btn btn-success">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
   </header>
-
-  <!-- Listado de servicios -->
-  <main class="container py-5">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      
-      <!-- Servicio (ejemplo, repite hasta tener 10) -->
-      <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="https://gruposervice.com.uy/blog/files/mantenimiento-de-computadoras-img-1_og.png" class="card-img-top" alt="Mantenimiento preventivo de computadores">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Mantenimiento preventivo de computadores</h5>
-            <p class="text-primary fs-5 fw-semibold">$100.000</p>
-            <a href="detalle.html" class="btn btn-outline-primary w-100">Ver detalle</a>
-          </div>
-        </div>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Innovación que <span>Impulsa tu Negocio</span></h1>
+      <p>Transformamos ideas en soluciones tecnológicas que impulsan el crecimiento de tu empresa hacia el futuro digital.</p>
+      <div class="buttons">
+        <a href="frame.html" class="btn-primary">Explora Servicios</a>
+        <a href="#" class="btn-secondary">Ver Demo</a>
       </div>
-
-      <!-- Copiar esta estructura para los 10 servicios cambiando nombre, precio e imagen -->
-      <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="https://intratecno.com/wp-content/uploads/hombre-usando-laptop-con-windows-10-instalacion-de-software.webp" class="card-img-top" alt="Instalación de software empresarial">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Instalación de software empresarial</h5>
-            <p class="text-primary fs-5 fw-semibold">$50.000</p>
-            <a href="detalle.html" class="btn btn-outline-primary w-100">Ver detalle</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="https://fixit-up.net/wp-content/uploads/2023/06/soporte-tecnico-remoto-en-el-peru.jpg" class="card-img-top" alt="Soporte técnico remoto">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Soporte técnico remoto</h5>
-            <p class="text-primary fs-5 fw-semibold">$120.000</p>
-            <a href="detalle.html" class="btn btn-outline-primary w-100">Ver detalle</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="https://www.womgp.com/blog/wp-content/uploads/2021/03/Desarrollo-Web-Dibdata.jpg" class="card-img-top" alt="Desarrollo de páginas web">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Desarrollo de páginas web</h5>
-            <p class="text-primary fs-5 fw-semibold">$300.000</p>
-            <a href="detalle.html" class="btn btn-outline-primary w-100">Ver detalle</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="https://www.sysblue.com.co/wp-content/uploads/2024/01/dominio.hosting.png" class="card-img-top" alt="Hosting y dominio">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Hosting y dominio</h5>
-            <p class="text-primary fs-5 fw-semibold">$150.000</p>
-            <a href="detalle.html" class="btn btn-outline-primary w-100">Ver detalle</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="https://nuc.edu/wp-content/uploads/2024/10/blog-seguridad-informatica.jpg" class="card-img-top" alt="Seguridad informática">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Seguridad informática</h5>
-            <p class="text-primary fs-5 fw-semibold">$1 00.000</p>
-            <a href="detalle.html" class="btn btn-outline-primary w-100">Ver detalle</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="https://www.acrylicwifi.com/wp-content/uploads/2023/02/mejorar-una-red-wifi-empresarial-1.webp" class="card-img-top" alt="Redes e Internet empresarial">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Redes e Internet empresarial</h5>
-            <p class="text-primary fs-5 fw-semibold">$200.000</p>
-            <a href="detalle.html" class="btn btn-outline-primary w-100">Ver detalle</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLwZM6XnUaEPXb7U005BhWj2BlcNj_jYtGag&s" class="card-img-top" alt="Cámaras de seguridad (CCTV e IP)">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Cámaras de seguridad (CCTV e IP)</h5>
-            <p class="text-primary fs-5 fw-semibold">$200.000</p>
-            <a href="detalle.html" class="btn btn-outline-primary w-100">Ver detalle</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="https://cdn.euroinnova.edu.es/img/subidasEditor/4%20(1)-1639492679.webp" class="card-img-top" alt="Capacitaciones en ofimática y TI">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Capacitaciones en ofimática y TI</h5>
-            <p class="text-primary fs-5 fw-semibold">$200.000</p>
-            <a href="detalle.html" class="btn btn-outline-primary w-100">Ver detalle</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="https://inforges.es/wp-content/uploads/2022/06/consultoria-transformacion-digital.jpg" class="card-img-top" alt="Consultoría en transformación digital">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Consultoría en transformación digital</h5>
-            <p class="text-primary fs-5 fw-semibold">$200.000</p>
-            <a href="detalle.html" class="btn btn-outline-primary w-100">Ver detalle</a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </main>
+    <div class="img">
+      <img src="img/homepage/equipo.png" alt="Equipo trabajando">
+    </div>
+  </section>
+  <section class="about">
+    <div class="about-img">
+      <img src="img/homepage/grupo.png" alt="Personas saludándose">
+    </div>
+    <div class="about-text">
+      <h2>Construyendo el Futuro Digital</h2>
+      <p>Somos una empresa líder en soluciones tecnológicas, dedicada a transformar la manera en que las empresas operan en el mundo digital.</p>
+      <h3>Nuestra Misión</h3>
+      <p>Empoderar a las empresas con herramientas digitales que no solo resuelvan problemas actuales, sino que abran camino a futuras oportunidades.</p>
+      <ul>
+        <li>Más de 5 años de experiencia</li>
+        <li>Equipo multidisciplinario certificado</li>
+        <li>Metodologías ágiles y enfoque en el usuario</li>
+      </ul>
+    </div>
+  </section>
+  <section class="values">
+   <div class="value">
+  <div class="value-icon">
+    <img src="img/homepage/iconos/flechas-orientadas.png" alt="Aplicación móvil">
+  </div>
+  <h4>Orientado a soluciones</h4>
+  <p>Nos enfocamos en entregar soluciones que generen valor real para nuestros clientes.</p>
+</div>
+    <div class="value">
+  <div class="value-icon">
+    <img src="img/homepage/iconos/cohete.png" alt="Aplicación móvil">
+  </div>
+  <h4>Innovación constante</h4>
+  <p>Utilizamos la ultimas tecnologias para crear soluciones vanguardistas</p>
+</div>
+  
+    <div class="value">
+  <div class="value-icon">
+    <img src="img/homepage/iconos/red.png" alt="Aplicación móvil">
+  </div>
+  <h4>Trabajo en equipo</h4>
+  <p>Colaboración cercana con los clientes.</p>
+</div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3 mt-5">
-    <p class="mb-0">© 2025 Mi Empresa - Todos los derechos reservados</p>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<div class="value">
+  <div class="value-icon">
+    <img src="img/homepage/iconos/calidad.png" alt="Aplicación móvil">
+  </div>
+  <h4>Calidad garantizada</h4>
+  <p>Mantenemos los más altos estándares de calidad en todos nuestros proyectos  </p>
+</div>
+  </section>
+  <section class="cta">
+  <div class="cta-container">
+    <div class="cta-img">
+      <img src="img/homepage/equipado.jpg" alt="Cliente satisfecho">
+    </div>
+    <div class="cta-text">
+      <h2>¿Listo para ser nuestro próximo cliente?</h2>
+      <div class="buttons">
+        <a href="#" class="btn-primary">Comenzar proyecto</a>
+        <a href="#" class="btn-secondary">Agendar reunión</a>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="services">
+    <h1>Nuestros Servicios</h1>
+    <h3>Soluciones Tecnológicas Integrales</h3>
+    <h4>Ofrecemos un amplio portafolio de servicios tecnologicos diseñado para impulsar la tranformación digital de tu emprea </h4>
+    <div class="service-grid">
+      <div class="service-item">
+        <img src="img/homepage/iconos/codigo.png" alt="Aplicación móvil">
+        <h3>Desarrollo Web</h3>
+        <p>React/Vue.js, Node.js, APIs RESTful, Bases de datos</p>
+      </div>
+      <div class="service-item">
+        <img src="img/homepage/iconos/aplicacion-movil.png" alt="Aplicación móvil">
+        <h3>Aplicaciones Móviles</h3>
+        <p>React Native, Flutter, iOS/Android, UI/UX Design</p>
+      </div>
+      <div class="service-item">
+        <img src="img/homepage/iconos/la-computacion-en-nube.png" alt="Aplicación móvil">
+        <h3>Soluciones Cloud</h3>
+        <p>AWS/Azure, DevOps, Microservicios</p>
+      </div>
+      <div class="service-item">
+        <img src="img/homepage/iconos/seguridad.png" alt="Aplicación móvil">
+        <h3>Ciberseguridad</h3>
+        <p>Auditorías, Pentesting, Compliance</p>
+      </div>
+    </div>
+  </section>
+  <section class="cta-banner">
+  <div class="cta-inner">
+    <h2>¿Listo para Transformar tu Negocio?</h2>
+    <p>Contáctanos hoy y descubre cómo nuestras soluciones pueden impulsar el crecimiento de tu empresa.</p>
+
+    <div class="cta-actions">
+      <a href="#" class="btn-cta primary">Solicitar consulta Gratuita</a>
+      <a href="#" class="btn-cta ghost">Ver Portafolio</a>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <h2 class="footer-title">TechGroup</h2>
+    <p class="footer-desc">
+      Transformamos ideas en soluciones tecnológicas innovadoras que impulsan el crecimiento de tu empresa hacia el futuro digital.
+    </p>
+
+    <div class="footer-contact">
+      <div class="contact-item">
+        <span class="contact-icon">
+          <img src="img/homepage/iconos/correo.png" alt="Correo">
+        </span>
+        <a href="mailto:contacto@slider.com">contacto@slider.com</a>
+      </div>
+
+      <div class="contact-item">
+        <span class="contact-icon">
+          <img src="img/homepage/iconos/llamar.png" alt="Teléfono">
+        </span>
+        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+      </div>
+
+      <div class="contact-item">
+        <span class="contact-icon">
+          <img src="img/homepage/iconos/ubicacion.png" alt="Dirección">
+        </span>
+        <span>123 Tech Street, Ciudad Digital</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 <strong>TechGroup</strong>. <strong>Todos Los Derechos Reservados.</strong>
+    </div>
+
+  </div>
+</footer>
+  
+  <script src="js/script.js"></script>
 </body>
 </html>
