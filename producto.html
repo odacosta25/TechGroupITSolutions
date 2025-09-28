@@ -13,19 +13,25 @@
 </a>
     <nav>
       <ul class="nav-links">
-        <li><a href="#">Inicio</a></li>
+        <li><a href="index.html">Inicio</a></li>
         <li><a href="#">Nosotros</a></li>
         <li class="dropdown">
           <a href="#">Servicios ▾</a>
           <ul class="dropdown-menu">
-            <li><a href="producto.html">Desarrollo Web</a></li>
-            <li><a href="producto.html">Aplicaciones Móviles</a></li>
-            <li><a href="producto.html">Soluciones Cloud</a></li>
-            <li><a href="producto.html">Ciberseguridad</a></li>
+            <li><a href="producto.html?id=software">Desarrollo de Software</a></li>
+            <li><a href="producto.html?id=web">Diseño Web</a></li>
+            <li><a href="producto.html?id=computo">Consultoría</a></li>
+            <li><a href="producto.html?id=empresarial">Instalación de Software Empresarial</a></li>
+            <li><a href="producto.html?id=soporte">Soporte Técnico</a></li>
+            <li><a href="producto.html?id=impresora">Mantenimiento de Impresora</a></li>
+            <li><a href="producto.html?id=licencias">Licencias de Software</a></li>
+            <li><a href="producto.html?id=equipos">Equipos a la Medida</a></li>
+            <li><a href="producto.html?id=consolas">Mantenimiento de Consolas</a></li>
           </ul>
         </li>
         <li><a href="#">Contáctanos</a></li>
-        <li><a href="login.html">Iniciar Sesión</a></li>
+        <li><a href="tables.html">Dashboard</a></li>
+        <li><a href="login.html" class="btn btn-success">Iniciar Sesión</a></li>
       </ul>
     </nav>
     <div class="menu-toggle" id="menu-toggle">☰</div>
@@ -34,75 +40,33 @@
 <section class="product-hero">
   <!-- Imagen con marco oscuro -->
   <div class="media-frame">
-    <img src="img/homepage/Servicios/serviciosdesarrolloweb.png" alt="Diseño web">
+    <img src="" alt="Producto">
   </div>
 
   <!-- Información del producto -->
   <div class="hero-info">
-    <h1>Diseño web</h1>
-    <p class="hero-sub">Sitios web modernos, responsivos y optimizados para conversión.</p>
+    <h1></h1>
+    <p class="hero-sub"></p>
 
     <div class="price-row">
-      <span class="price-currency">R$</span>
-      <span class="price-value">400,00</span>
+      <span class="price-currency"> $</span>
+      <span class="price-value"></span>
     </div>
 
     <a href="#" class="btn-primary btn-lg">Pedir consultoría</a>
 
     <hr class="hero-divider">
-
-    <!-- Caja oscura (placeholder para badge, info, etc.) -->
     <div class="promo-box"></div>
   </div>
 </section>
+
 <section class="service-details">
   <h2>Detalles del servicio</h2>
-
   <div class="details-card">
-    <ul>
-      <li>Cada sitio web que desarrollamos pasa por un proceso estructurado para garantizar calidad, funcionalidad y resultados:</li>
-      <li><strong>Análisis y planificación:</strong> estudiamos tu negocio, público objetivo y necesidades para definir la arquitectura y funcionalidades más adecuadas.</li>
-      <li><strong>Diseño personalizado:</strong> creamos una interfaz visual atractiva, intuitiva y alineada con la identidad de tu marca.</li>
-      <li><strong>Desarrollo responsivo:</strong> implementamos tecnologías modernas (HTML, CSS, JavaScript, PHP) para asegurar que tu web se vea y funcione perfectamente en cualquier dispositivo.</li>
-      <li><strong>Optimización SEO y velocidad:</strong> configuramos el sitio para cargar rápido y posicionarse mejor en buscadores.</li>
-      <li><strong>Pruebas de usabilidad y seguridad:</strong> verificamos que todo funcione correctamente y protegemos tu web frente a vulnerabilidades.</li>
-      <li><strong>Entrega y soporte:</strong> te entregamos un sitio listo para convertir visitantes en clientes y ofrecemos soporte post-lanzamiento.</li>
-    </ul>
+    <ul></ul>
   </div>
 </section>
-<section class="other-services">
-  <h2 class="os-title">Otros servicios</h2>
 
-  <div class="os-grid">
-    <!-- Card 1 -->
-    <article class="os-card">
-      <h4 class="os-name">Desarrollo de Apps Móviles</h4>
-      <div class="os-media">
-        <img src="img/homepage/Servicios/Screenshot_1+.png" alt="Desarrollo de Apps Móviles">
-      </div>
-      <div class="os-price">$ 800,00</div>
-    </article>
-
-    <!-- Card 2 -->
-    <article class="os-card">
-      <h3 class="os-name">Análisis de Datos</h3>
-
-      <div class="os-media">
-        <img src="img/homepage/Servicios/bigdata.png" alt="Análisis de Datos">
-      </div>
-      <div class="os-price">$ 800,00</div>
-    </article>
-
-    <!-- Card 3 -->
-    <article class="os-card">
-      <h3 class="os-name">Ciberseguridad</h3>
-      <div class="os-media">
-        <img src="img/homepage/servicios/ciber.png" alt="Ciberseguridad">
-      </div>
-      <div class="os-price">$ 150,00</div>
-    </article>
-  </div>
-</section>
 <footer class="site-footer">
   <div class="footer-container">
 
@@ -141,4 +105,174 @@
   </div>
 </footer>
 </body>
+<script id="data-productos" type="application/json">
+[
+  {
+    "id": "software",
+    "titulo": "Desarrollo de Software",
+    "imagen": "img/homepage/Servicios/Desarrollodesoftware.png",
+    "descripcion": "React/Vue.js, Node.js, APIs RESTful, Bases de datos",
+    "detalles": [
+      "Análisis y planificación: estudiamos tu negocio.",
+      "Diseño personalizado: interfaz visual atractiva.",
+      "Desarrollo responsivo: HTML, CSS, JS, PHP.",
+      "Optimización SEO y velocidad.",
+      "Pruebas de usabilidad y seguridad.",
+      "Entrega y soporte post-lanzamiento."
+    ],
+    "precio": "120.000"
+  },
+  {
+    "id": "web",
+    "titulo": "Diseño Web",
+    "imagen": "img/homepage/Servicios/serviciosdesarrolloweb.png",
+    "descripcion": "Sitios web modernos, responsivos y optimizados para conversión.",
+    "detalles": [
+      "Planificación y arquitectura web.",
+      "Diseño UI/UX moderno.",
+      "Implementación responsiva.",
+      "SEO y optimización."
+    ],
+    "precio": "160.000"
+  },
+  {
+    "id": "consultoria",
+    "titulo": "Consultoría",
+    "imagen": "img/homepage/Servicios/consultoria.png",
+    "descripcion": "Análisis, Estrategia, Soluciones",
+    "detalles": [
+      "Análisis de procesos y necesidades tecnológicas.",
+      "Estrategia digital adaptada a tu empresa.",
+      "Soluciones a medida para mejorar productividad."
+    ],
+    "precio": "300.000"
+  },
+  {
+    "id": "computo",
+    "titulo": "Mantenimiento de Cómputo",
+    "imagen": "img/homepage/Servicios/computo.png",
+    "descripcion": "Prevención, Optimización, Soporte",
+    "detalles": [
+      "Mantenimiento preventivo de equipos de cómputo.",
+      "Optimización de rendimiento y limpieza de software.",
+      "Soporte técnico para fallas comunes."
+    ],
+    "precio": "250.000"
+  },
+  {
+    "id": "empresarial",
+    "titulo": "Instalación de Software Empresarial",
+    "imagen": "img/homepage/Servicios/empresa.png",
+    "descripcion": "Implementación, Configuración, Productividad",
+    "detalles": [
+      "Instalación y configuración de software empresarial.",
+      "Implementación de suites de oficina y ERP.",
+      "Capacitación y soporte post-instalación."
+    ],
+    "precio": "450.000"
+  },
+  {
+    "id": "soporte",
+    "titulo": "Soporte Técnico Remoto",
+    "imagen": "img/homepage/Servicios/soporte.png",
+    "descripcion": "Asistencia, Diagnóstico, Solución",
+    "detalles": [
+      "Asistencia remota para resolver problemas técnicos.",
+      "Diagnóstico de fallas en tiempo real.",
+      "Solución rápida y efectiva sin visitas presenciales."
+    ],
+    "precio": "150.000"
+  },
+  {
+    "id": "impresora",
+    "titulo": "Mantenimiento de Impresora",
+    "imagen": "img/homepage/Servicios/impresora.png",
+    "descripcion": "Limpieza, Reparación, Optimización",
+    "detalles": [
+      "Limpieza de cabezales y rodillos.",
+      "Reparación de fallas comunes en impresoras.",
+      "Optimización para alargar la vida útil."
+    ],
+    "precio": "200.000"
+  },
+  {
+    "id": "licencias",
+    "titulo": "Licencias de Software",
+    "imagen": "img/homepage/Servicios/liciencia.png",
+    "descripcion": "Gestión, Legalidad, Actualización",
+    "detalles": [
+      "Asesoría en licenciamiento de software.",
+      "Gestión de licencias legales para tu empresa.",
+      "Actualización y renovación de licencias."
+    ],
+    "precio": "100.000"
+  },
+  {
+    "id": "equipos",
+    "titulo": "Equipos a la Medida",
+    "imagen": "img/homepage/Servicios/equipo.png",
+    "descripcion": "Diseño, Personalización, Rendimiento",
+    "detalles": [
+      "Diseño de equipos según las necesidades del cliente.",
+      "Personalización de hardware y software.",
+      "Rendimiento optimizado para tareas específicas."
+    ],
+    "precio": "800.000"
+  },
+  {
+    "id": "consolas",
+    "titulo": "Mantenimiento de Consolas",
+    "imagen": "img/homepage/Servicios/consolas.png",
+    "descripcion": "Revisión, Reparación, Optimización",
+    "detalles": [
+      "Revisión de hardware y software de consolas.",
+      "Reparación de fallas comunes.",
+      "Optimización del sistema para mejor rendimiento."
+    ],
+    "precio": "220.000"
+  }
+]
+</script>
+
+<!-- Script que carga los datos -->
+<script>
+  function cargarProducto() {
+    // Obtener parámetro ?id= de la URL
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    // Leer el JSON desde la etiqueta script
+    const data = document.getElementById("data-productos").textContent;
+    const productos = JSON.parse(data);
+
+    // Buscar producto por id
+    const producto = productos.find(p => p.id === id);
+
+    if (producto) {
+      // Imagen
+      document.querySelector(".media-frame img").src = producto.imagen;
+      document.querySelector(".media-frame img").alt = producto.titulo;
+
+      // Título y descripción
+      document.querySelector(".hero-info h1").textContent = producto.titulo;
+      document.querySelector(".hero-sub").textContent = producto.descripcion;
+
+      // Precio
+      document.querySelector(".price-value").textContent = producto.precio;
+
+      // Lista de detalles
+      const detallesList = document.querySelector(".details-card ul");
+      detallesList.innerHTML = "";
+      producto.detalles.forEach(det => {
+        const li = document.createElement("li");
+        li.textContent = det;
+        detallesList.appendChild(li);
+      });
+    } else {
+      document.querySelector(".hero-info h1").textContent = "Producto no encontrado";
+    }
+  }
+
+  cargarProducto();
+</script>
 </html>
